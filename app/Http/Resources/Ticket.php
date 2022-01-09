@@ -18,7 +18,8 @@ class Ticket extends JsonResource
 		'id' => $this->id,
 		'title' => $this->title,
 		'comment' => $this->comment,
-		'open' => $this->open
+		'open' => $this->open,
+		'author' => $this->author
 	];
     }
 }

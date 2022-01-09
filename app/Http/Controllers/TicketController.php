@@ -37,7 +37,7 @@ class TicketController extends Controller
 	$ticket->title = $request->input('title');
 	$ticket->comment = $request->input('comment');
 	$ticket->open = $request->input('open');
-
+	$ticket->author = $request->input('author');
 	if($ticket->save()){
 		return new TicketResource($ticket);
 	}
