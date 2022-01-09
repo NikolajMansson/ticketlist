@@ -17,3 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// List tickets
+Route::get('tickets', 'App\Http\Controllers\TicketController@index');
+
+// List singl ticket
+Route::get('ticket/{id}', 'App\Http\Controllers\TicketController@store');
+
+ // Create new ticket
+Route::post('ticket', 'App\Http\Controllers\TicketController@store');
+
+// Update ticket
+Route::put('ticket', 'App\Http\Controllers\TicketController@store');
+
+// Delete ticket
+Route::delete('ticket/{id}', 'App\Http\Controllers\TicketController@destroy');
