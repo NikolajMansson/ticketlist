@@ -28,7 +28,7 @@ Route::get('ticket/{id}', 'App\Http\Controllers\TicketController@show');
 Route::post('ticket', 'App\Http\Controllers\TicketController@store');
 
 // Update ticket
-Route::put('ticket', 'App\Http\Controllers\TicketController@store');
+Route::put('ticket/{id}', 'App\Http\Controllers\TicketController@store');
 
 // Delete ticket
 Route::delete('ticket/{id}', 'App\Http\Controllers\TicketController@destroy');
