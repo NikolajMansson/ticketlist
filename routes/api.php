@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('tickets', 'App\Http\Controllers\TicketController@index');
 
 // List singl ticket
-Route::get('ticket/{id}', 'App\Http\Controllers\TicketController@store');
+Route::get('ticket/{id}', 'App\Http\Controllers\TicketController@show');
 
  // Create new ticket
 Route::post('ticket', 'App\Http\Controllers\TicketController@store');
