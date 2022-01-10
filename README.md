@@ -16,14 +16,14 @@ Laravel Server delivering ticket objects via a REST API on IP address http://104
 List all tickets:
 GET api/articles
 
-Get specific ticket
+Get specific ticket:
 GET api/ticket/{id}
 
-Delete ticket
+Delete ticket:
 DELETE api/ticket/{id}
 
-Add ticket
+Add ticket:
 POST api/ticket
 
-Update ticket
+Update ticket:
 PUT api/ticket/{id}
